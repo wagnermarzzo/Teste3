@@ -1,94 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michelly Vanessa Unhas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelly Vanessa Unhas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-  <div class="banner">
-    <img src="https://images.unsplash.com/photo-1618393142390-d6a86a2c5571" alt="Banner Unhas" class="banner-img">
-  </div>
-  <h1>Michelly Vanessa Unhas</h1>
-  <p>Realce sua beleza com unhas perfeitas</p>
-</header>
-
-<section class="services">
-  <h2>Nossos Serviços</h2>
-  <ul>
-    <li>Manicure e Pedicure</li>
-    <li>Unha em Gel</li>
-    <li>Unha em Fibra</li>
-    <li>Decoração Personalizada</li>
-  </ul>
-</section>
-
-<section class="gallery">
-  <h2>Trabalhos Recentes</h2>
-  <div class="gallery-images">
-    <img src="https://images.unsplash.com/photo-1589578584659-0164971b3eab" alt="Unha 1">
-    <img src="https://images.unsplash.com/photo-1591381641258-050fbd3d0d5e" alt="Unha 2">
-    <img src="https://images.unsplash.com/photo-1607773802947-942b5b1f3051" alt="Unha 3">
-    <img src="https://images.unsplash.com/photo-1616401784893-d04e3e6d6cf0" alt="Unha 4">
-  </div>
-</section>
-
-<section class="agendamento">
-  <h2>Agendamento</h2>
-  <form id="formAgendamento">
-    <input type="text" id="nome" placeholder="Nome completo" required>
-    <input type="tel" id="telefone" placeholder="WhatsApp" required>
-    <select id="servico" required>
-      <option value="">Escolha um serviço</option>
-      <option>Manicure e Pedicure</option>
-      <option>Unha em Gel</option>
-      <option>Unha em Fibra</option>
-      <option>Decoração</option>
-    </select>
-    <input type="date" id="data" required>
-    <select id="hora" required>
-      <option value="">Escolha um horário</option>
-      <option>18:00 (sexta)</option>
-      <option>20:00 (sexta)</option>
-      <option>07:00 (sábado)</option>
-      <option>09:00 (sábado)</option>
-      <option>11:00 (sábado)</option>
-      <option>14:00 (sábado)</option>
-      <option>17:00 (sábado)</option>
-      <option>19:00 (sábado)</option>
-    </select>
-    <textarea id="obs" placeholder="Observações (opcional)"></textarea>
-
-    <p><b>Taxa de agendamento:</b> R$ 15,00 via Pix</p>
-    <p>Pix: 08751416417 (Michelly Vanessa Pessoa - Banco Itaú)</p>
-
-    <button type="button" onclick="enviarWhatsApp()">Agendar via WhatsApp</button>
-  </form>
-</section>
-
-<footer>
-  <p>WhatsApp: <a href="https://wa.me/5511964657571" target="_blank">(11) 96465-7571</a></p>
-  <p>Instagram: @michellyvanessaunhas</p>
-</footer>
-
-<script>
-  function enviarWhatsApp() {
-    const nome = document.getElementById('nome').value;
-    const telefone = document.getElementById('telefone').value;
-    const servico = document.getElementById('servico').value;
-    const data = document.getElementById('data').value;
-    const hora = document.getElementById('hora').value;
-    const obs = document.getElementById('obs').value;
-
-    const mensagem = `Olá, meu nome é ${nome}, telefone ${telefone}. Gostaria de agendar ${servico} para o dia ${data} às ${hora}. Observações: ${obs}. Segue o comprovante do Pix para confirmar a reserva.`;
-
-    const url = `https://wa.me/5511964657571?text=${encodeURIComponent(mensagem)}`;
-    window.open(url, '_blank');
-  }
-</script>
-
+    <header>
+        <div class="header-content">
+            <h1>Michelly Vanessa Unhas</h1>
+            <p>Manicure e Pedicure de qualidade para você!</p>
+        </div>
+    </header>
+    
+    <section class="main-banner">
+        <img src="https://i.pinimg.com/originals/57/06/01/57060132745e29b1bf8474a4e66e0880.jpg" alt="Banner de Unhas Decoradas">
+    </section>
+    
+    <section class="services">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Manicure e Pedicure</li>
+            <li>Unha em Gel</li>
+            <li>Unha em Fibra</li>
+        </ul>
+    </section>
+    
+    <section class="schedule">
+        <h2>Agendamento</h2>
+        <p>Escolha o dia e horário para agendar seu serviço!</p>
+        <a href="https://calendly.com/michelly-vanessa/unhas" target="_blank" class="button">Agendar Agora</a>
+    </section>
+    
+    <footer>
+        <p>Contato: (11) 96465-7571</p>
+        <p>Pix: 08751416417 - Michelly Vanessa Pessoa - Banco Itaú</p>
+    </footer>
 </body>
 </html>
