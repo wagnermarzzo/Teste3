@@ -33,16 +33,13 @@ header p {
 .main-banner {
     width: 100%;
     overflow: hidden;
-    position: relative;
-    background-color: #f8f8f8;
     margin-bottom: 30px;
 }
 
 .banner-img {
     width: 100%;
-    height: 100%;
+    height: 400px;
     object-fit: cover;
-    object-position: center;
 }
 
 /* Seção de serviços */
